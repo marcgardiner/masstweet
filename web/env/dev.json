@@ -1,0 +1,10 @@
+{
+    "environment": "dev",
+    "secret_key": "poegissystem",
+
+    "db_url": "localhost",
+    "db_user": "dev",
+    "db_password": "dev123",
+    "db_port": "5432",
+    "db_name": "poaegis"
+}

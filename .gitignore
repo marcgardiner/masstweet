@@ -1,0 +1,5 @@
+# IDE
+.vscode/
+
+# Intermediate file compiled
+*.pyc
