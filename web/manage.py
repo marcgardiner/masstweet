@@ -3,7 +3,7 @@
 import os
 import unittest
 
-from flask_script import Manager
+from flask_script import Manager, prompt_bool
 from flask_migrate import Migrate, MigrateCommand
 
 from app import db, create_app
@@ -37,7 +37,8 @@ def create_db():
 @manager.command
 def drop_db():
     """Drops the db tables."""
-    db.drop_all()
+    if prompt_bool("Are you sure you want to lose all your data"):
+        db.drop_all()
 
 
 @manager.command

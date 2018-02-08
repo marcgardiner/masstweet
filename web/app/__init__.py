@@ -10,8 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 from instance.config import APP_CONFIG
-from route.user import user_routes
-from route.admin import admin_routes
+from app.route.user import user_routes
+from app.route.admin import admin_routes
 
 
 db = SQLAlchemy()
